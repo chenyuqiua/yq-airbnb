@@ -14,7 +14,7 @@ const Detail = memo(() => {
   
   const dispatch = useDispatch()
   useEffect(() => {
-    dispatch(changeHeaderConfigAction({ isFixed: false }))
+    dispatch(changeHeaderConfigAction({ isFixed: false, topAlpha: false}))
   }, [dispatch])
 
   function pictureItem(url = detailInfo?.picture_urls[0]) {

@@ -4,12 +4,14 @@ const mainSlice = createSlice({
   name: "main",
   initialState: {
     headerConfig: {
-      isFixed: false
+      isFixed: false,
+      topAlpha: false
     }
   },
   reducers: {
     changeHeaderConfigAction(state, { payload }) {
       state.headerConfig.isFixed = payload.isFixed
+      state.headerConfig.topAlpha = payload.topAlpha
     }
   }
 })

@@ -9,7 +9,7 @@ export const LeftWrapper = styled.div`
     align-items: center;
     width: 102px;
     height: 80px;
-    color: ${props => props.theme.color.primaryColor};
+    color: ${props => props.theme.isAlpha ? "#fff": props.theme.color.primaryColor};
     cursor: pointer;
   }
 `

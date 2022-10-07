@@ -13,12 +13,13 @@ export const RightWrapper = styled.div`
 
   .btns {
     margin-right: 8px;
+    color: ${props => props.theme.isAlpha ? "#fff" : props.theme.text.primaryColor};
 
     .btn {
       padding: 12px;
       cursor: pointer;
       &:hover {
-        background-color: #f7f7f7;
+        background-color: ${props => props.theme.isAlpha ? "rgba(247,247,247,.1)" :"#f7f7f7"};
         border-radius: 22px;
       }
     }
@@ -35,7 +36,8 @@ export const RightWrapper = styled.div`
       border: 1px solid #ddd;
       border-radius: 21px;
       cursor: pointer;
-
+      background-color: #fff;
+      
       ${props => props.theme.mixin.boxShadow}
     }
 
